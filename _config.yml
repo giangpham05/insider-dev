@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "url:"
 footer_text: >
 
 url:  # the base hostname & protocol for your site
-baseurl: dev-insider # the subpath of your site, e.g. /blog/
+baseurl: /dev-insider # the subpath of your site, e.g. /blog/
 last_updated: # leave blank if you don't want to display last updated
 
 # -----------------------------------------------------------------------------
