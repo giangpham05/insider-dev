@@ -81,6 +81,7 @@ plugins:
     - jekyll-paginate
     - jekyll/scholar
     - jemoji
+    - jekyll-seo-tag
 
 # Jekyll-Scholar
 scholar:
