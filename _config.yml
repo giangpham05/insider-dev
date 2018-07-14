@@ -25,9 +25,9 @@ contact_note: >
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 
 # -----------------------------------------------------------------------------
-# Blog
+# Blogs
 # -----------------------------------------------------------------------------
-blog_name: insider-dev
+blog_name: Insider-Dev
 blog_description: a simple whitespace theme for academics
 
 # Pagination
@@ -41,7 +41,7 @@ text:
     older: 'Older'
 
 # Comments
-disqus_shortname: Insider Dev # put your disqus shortname
+disqus_shortname:  insider-dev # put your disqus shortname
 
 # Optional features
 show_social_icons:  false
