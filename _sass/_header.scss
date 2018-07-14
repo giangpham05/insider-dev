@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .site-header {
     border-bottom: 1px solid $grey-color-light;
     background-color: #fff;
@@ -108,3 +110,84 @@
         font-size:25px;
     }
 }
+
+// Dropdown menu
+
+ // Parameters
+
+ $menuColor:#AFF8C4;
+ $subMenuColor:#EEEEEE;//#9CE0C9;
+ $fontColor: #0E0500;
+ $menuWidth:940px;
+ $backgroundColor:#FFFCF6;
+ $borderRadius:4px;
+ $duration:0.33s;
+
+ ul.menu{
+ 	//width: $menuWidth;
+ 	//height: 40px;
+ 	line-height: 56px;
+ 	position: relative;
+ 	text-align: center;
+ 	margin: auto; 
+ 	padding: auto;
+    //background-color:$menuColor;
+    @include border-top-radius(25px);
+    @include border-top-radius($borderRadius 0);
+
+ 	li{
+        float: left;
+        list-style-type: none;
+ 		width: auto;
+ 		a{
+ 			display: block;
+ 			width: auto;
+ 			text-decoration: none;
+ 		}
+ 	}
+ 	li:hover 
+ 	{
+ 		background-color: $subMenuColor;
+ 		@include transition-property(background-color);
+ 		@include transition-duration($duration);
+ 		//@include border-top-radius($borderRadius);
+ 		
+ 		ul{
+ 			//width: $menuWidth;
+ 			background: $subMenuColor;
+            visibility: visible; 
+            
+            
+ 			@include opacity(1);
+ 			@include transition-property(opacity);
+ 			@include transition-duration($duration);
+ 			@include border-bottom-radius($borderRadius);
+ 		}
+ 	}
+ }
+
+ ul.sub-menu{
+ 	@include opacity(0);
+ 	visibility: hidden;
+ 	display:block;
+ 	position: fixed;
+ 	left: 0;
+    width: 100%;
+ 	line-height: 40px;
+    background-color: $subMenuColor; 
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    line-height: 56px;
+ 	li:hover{
+ 		@include border-bottom-radius(25px);
+ 	}
+ }
+
+ ul.menu,
+ ul.sub-menu{
+ 	a{
+ 		padding: 0 10px;
+     }
+ }
+ 

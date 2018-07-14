@@ -3,10 +3,40 @@
 ---
 @charset "utf-8";
 
+@import 
+    'variables',
+    'media-queries';
 
-@import 'variables';
-@import 'media-queries';
+@import 'support';
+@import 'shared';
 @import 'basscss';
+
+@import 
+    'animation',
+    'appearance',
+    'border-radius',
+    'background-clip',
+    'background-origin',
+    'background-size',
+    'box-shadow',
+    'box-sizing',
+    'box',
+    'columns',
+    'filter',
+    'flexbox',
+    'font-face',
+    'hyphenation',
+    'images',
+    'inline-block',
+    'opacity',
+    'pie',
+    'regions',
+    'text-shadow',
+    'transform',
+    'transform-legacy',
+    'transform',
+    'transition',
+    'user-interface';
 
 @import 'base';
 @import 'clearfix';

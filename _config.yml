@@ -14,26 +14,26 @@ last_updated: # leave blank if you don't want to display last updated
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
-github_username: # your GitHub user name
-twitter_username: # your Twitter handle
-linkedin_username: # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
-orcid_id: # your ORCID ID
+github_username: giangpham05
+googleplus_username: GiangPhạm05
+twitter_username: giangpham08
+linkedin_username: giangpham08
+youtube_username: https://www.youtube.com/channel/UC1AejSdp6KuiTr85KXRWnvA?view_as=subscriber
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  The best way to reach me is to drop a message via Linked In or Twitter. You can also leave any comment on my youtube channel if you are viewing my videos.
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
-blog_name: al-folio
+blog_name: insider-dev
 blog_description: a simple whitespace theme for academics
 
 # Pagination
 paginate: 4
-permalink: /blog/:year/:title/
-paginate_path: /blog/page:num/
+permalink: /blogs/csharp-coding/:year/:title/
+paginate_path: /blogs/csharp-coding/page:num/
 
 text:
   pagination:
@@ -41,7 +41,7 @@ text:
     older: 'Older'
 
 # Comments
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: Insider Dev # put your disqus shortname
 
 # Optional features
 show_social_icons:  false

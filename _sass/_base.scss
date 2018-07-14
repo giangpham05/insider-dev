@@ -20,10 +20,13 @@ body {
      -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+body{
+  background-color:#FFFCF6;
+}
 
 .wrapper {
-    max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
-    max-width:         calc(800px - (#{$horizontal-spacing-unit} * 2));
+    max-width: -webkit-calc(1012px - (#{$horizontal-spacing-unit} * 2));
+    max-width:         calc(1012px - (#{$horizontal-spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $horizontal-spacing-unit;
