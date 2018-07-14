@@ -27,8 +27,8 @@ google_analytics: UA-XXXXXXXXX # out your google-analytics code
 # -----------------------------------------------------------------------------
 # Blogs
 # -----------------------------------------------------------------------------
-blog_name: Insider-Dev
-blog_description: a simple whitespace theme for academics
+blog_name: C# Coding
+blog_description: This section focuses on key features that C# offers. 
 
 # Pagination
 paginate: 4
