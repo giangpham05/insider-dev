@@ -1,19 +1,8 @@
 <header class="site-header">
-
         <div class="wrapper" style="padding-left: 0; padding-right: 0;position: unset;">
-      
-          {% if page.layout != "about" %}
-          <span class="site-title">
-              {% assign name = site.name | split: ' ' %}
-              <a class="site-title" href="{{ site.baseurl | prepend: site.url }}/"><strong>{{ name | first }}</strong> {{ name | last }}</a>
-          </span>
-          {% endif %}
-      
           <nav class="site-nav" style="position: unset !important; line-height: 30px;">
-            
               <div class="topnav" id="topNavId">
-                  <a href="{{ site.baseurl | prepend: site.url }}/">About</a>
-                  
+                  <a href="{{ site.baseurl | prepend: site.url }}/"><strong>Giang </strong>Pham</a>
                   <div class="dropdown">
                     <div class="dropbtn" style="color: #666;">Blogs 
                       <i class="fa fa-caret-down"></i>
@@ -44,9 +33,6 @@
                   <a href="#">Channels</a>
                   <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
                 </div>
-                
-                
-                
                 <script>
                 function myFunction() {
                     var x = document.getElementById("topNavId");
@@ -57,12 +43,8 @@
                     }
                 }
                 </script>
-             
-      
             <!-- end nav-->
           </nav>
-      
         </div>
-      
       </header>
       
