@@ -1,6 +1,13 @@
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
+    @media screen and (max-width: $device) { 
+      @content;
+      top: 0;
+      width: 100%;
+      .dropdown-content {
+        position: relative;
+        overflow-y: scroll !important;
+        height: 100px;
+      }
     }
 }
 
