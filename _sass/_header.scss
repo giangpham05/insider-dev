@@ -200,7 +200,7 @@ $duration:0.33s;
   }
   
   .can-touch{
-    display: none;
+    display: block;
   }
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
