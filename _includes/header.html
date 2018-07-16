@@ -42,19 +42,18 @@
                         x.className = "topnav";
                     }
                 }
-                document.addEventListener('touchstart', function addtouchclass(e){ // first time user touches the screen
+                /*document.addEventListener('touchstart', function addtouchclass(e){ // first time user touches the screen
                     document.documentElement.getElementsByClassName('dropdown').add('can-touch') // add "can-touch" class to document root using classList API
                     document.removeEventListener('touchstart', addtouchclass, false) // de-register touchstart event
-                }, false)
+                }, false)*/
 
                 $( document ).ready(function() {
-                    $('.dropdown-content').on({ 'touchstart' : function(){ 
-                        if($('.dropdown-content').is(':visible') == true){
-                            alert("currently open...");
+                    $('.dropdown').on({ 'touchstart' : function(){ 
+                        if($(this).find('..dropdown-content').is(':visible') == true)
+                        {
+                            alert("currently open");
                         }
-                        else{
-                            alert("currently closed");
-                        }
+                        
                     }});
                 });
                 </script>
