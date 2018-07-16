@@ -194,7 +194,7 @@ $duration:0.33s;
       color: #B509AC;
   }
   
-  .dropdown:hover .dropdown-content {
+  .dropdown:active, .dropdown:hover .dropdown-content {
       display: block;
   }
   
