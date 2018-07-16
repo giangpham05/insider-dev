@@ -48,12 +48,20 @@
                 }, false)*/
 
                 $( document ).ready(function() {
+                    var count = 0;
                     $('.dropdown').on({ 'touchstart' : function(){ 
-                        if($(this).find('.dropdown-content').is(':visible') == true)
+                        var element = $(this).find('.dropdown-content');
+                        if(element.is(':visible') == true)
                         {
-                            alert("currently open");
+                            if(count > 0)
+                            {
+                                element.css('display', 'none');
+                                count = 0;
+                            }
+                            else{
+                                count++;
+                            }
                         }
-                        
                     }});
                 });
                 </script>
