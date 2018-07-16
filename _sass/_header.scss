@@ -121,11 +121,12 @@ $duration:0.33s;
     }
 }
 
-// Fixed navbar with scrollable items
+// Fixed navbar with scrollable
 .topnav {
     overflow: hidden;
     background-color: rgb(255, 255, 255);
   }
+  
   .topnav a {
     float: left;
     display: block;
@@ -194,10 +195,13 @@ $duration:0.33s;
       color: #B509AC;
   }
   
-  .dropdown:hover, .dropdown:active, .dropdown-content {
+  .can-touch, .dropdown:hover .dropdown-content {
       display: block;
   }
-  
+  .can-touch{
+      background: red;;
+  }
+
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
       display: none;

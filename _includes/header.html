@@ -42,7 +42,10 @@
                         x.className = "topnav";
                     }
                 }
-                document.addEventListener("touchstart", function(){}, true);
+                document.addEventListener('touchstart', function addtouchclass(e){ // first time user touches the screen
+                    document.documentElement.getElementsByClassName('dropdown').add('can-touch') // add "can-touch" class to document root using classList API
+                    document.removeEventListener('touchstart', addtouchclass, false) // de-register touchstart event
+                }, false)
                 </script>
             <!-- end nav-->
           </nav>
