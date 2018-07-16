@@ -46,6 +46,18 @@
                     document.documentElement.getElementsByClassName('dropdown').add('can-touch') // add "can-touch" class to document root using classList API
                     document.removeEventListener('touchstart', addtouchclass, false) // de-register touchstart event
                 }, false)
+
+                $( document ).ready(function() {
+                    $(document).on({ 'touchstart' : function(){ 
+                        if($('.dropdown-content').is(':visible') == true){
+                            alert("currently open");
+                        }
+                        else{
+                            alert("currently closed");
+                        }
+                    }});
+                   
+                });
                 </script>
             <!-- end nav-->
           </nav>
