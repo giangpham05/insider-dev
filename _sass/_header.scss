@@ -199,7 +199,7 @@ $duration:0.33s;
       display: block;
   }
   .can-touch{
-      background: red;;
+      background: red !important;
   }
 
   @media screen and (max-width: 600px) {
