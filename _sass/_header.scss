@@ -198,10 +198,10 @@ $duration:0.33s;
   .can-touch, .dropdown:hover .dropdown-content {
       display: block;
   }
+  
   .can-touch{
-      background: red !important;
+    display: none;
   }
-
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
       display: none;
