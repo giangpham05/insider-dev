@@ -48,15 +48,14 @@
                 }, false)
 
                 $( document ).ready(function() {
-                    $(document).on({ 'touchstart' : function(){ 
+                    $('.dropdown-content').on({ 'touchstart' : function(){ 
                         if($('.dropdown-content').is(':visible') == true){
-                            alert("currently open");
+                            alert("currently open...");
                         }
                         else{
                             alert("currently closed");
                         }
                     }});
-                   
                 });
                 </script>
             <!-- end nav-->
