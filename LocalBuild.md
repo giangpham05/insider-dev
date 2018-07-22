@@ -6,6 +6,7 @@
 + Step above will read the site url from _config
 + Now copy all the contents under _site folder within the currently working folder
 + Place them inside Static_Site
++ Create a file call .nojekyll within this folder
 + Add all files to git: git add .
 + Commit the changes
 + Push to the gh-pages: git push origin gh-pages -f. This will force update the gh-pages on Github
