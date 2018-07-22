@@ -3,12 +3,12 @@ layout: default
 ---
 
 <div class="header-bar">
-  <h1>Microsoft Azure</h1>
-  <h2>Here you'll find articles that are specific to Microsoft Azure</h2>
+  <h1>Software Design</h1>
+  <h2>Here you can find blogs relating to software design patterns and architecture that I found most common in the current trend</h2>
 </div>
 
 <ul class="post-list">
-  {% for post in paginator.posts %} 
+  {% for post in paginator.posts %}
     <li>
       <h2><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
       <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>

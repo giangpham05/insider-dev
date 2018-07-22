@@ -31,9 +31,16 @@ blog_name: C# Coding
 blog_description: This section focuses on key features that C# offers. 
 
 # Pagination
-paginate: 4
-permalink: /blogs/csharp-coding/:year/:title/
-paginate_path: /blogs/csharp-coding/page:num/
+
+paginate_multiple:
+  - paginate: 4
+    #permalink: /blogs/csharp-coding/:year/:title/
+    paginate_path: /blogs/csharp-coding/page:num/
+    sub_dir: '/csharp-coding'
+  - paginate: 4
+    #permalink: /blogs/microsoft-azure/:year/:title/
+    paginate_path: /blogs/microsoft-azure/page:num/
+    sub_dir: '/microsoft-azure'
 
 text:
   pagination:
@@ -82,6 +89,7 @@ plugins:
     - jekyll/scholar
     - jemoji
     - jekyll-seo-tag
+    - jekyll-paginate-multiple
 
 # Jekyll-Scholar
 scholar:
